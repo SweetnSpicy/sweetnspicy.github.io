@@ -4,10 +4,12 @@ p {
 
 h1 {
     color: #6BF7AA;
+    background-color: magenta;
 }
 
 h2 {
     color: #002147;
+    background-color: lightgray;
 }
 
 span {
