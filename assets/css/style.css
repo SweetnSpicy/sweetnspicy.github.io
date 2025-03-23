@@ -1,18 +1,31 @@
+html {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+
+a {
+    font-size: large;
+    font-weight: bold;
+}
+
 p {
-    color: #800080;
+    color: #1b001b; 
+    font-size: 18px;
 }
 
 h1 {
-    color: #6BF7AA;
-    background-color: magenta;
+    color: black;
+    font-size: x-large;
+    size: 40px;
 }
 
 h2 {
     color: #002147;
-    background-color: lightgray;
+    background-color: rgb(238, 238, 238);
 }
 
 span {
-    background-color: blue;
-    color: #FFE4E1;
+    background-color: rgb(57, 57, 255);
+    color: whitesmoke;
 }
