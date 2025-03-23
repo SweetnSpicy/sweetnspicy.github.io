@@ -1,6 +1,5 @@
 html {
     margin: auto;
-    width: 80%;
     padding: 10px;
 }
 
@@ -11,13 +10,13 @@ a {
 
 p {
     color: #1b001b; 
-    font-size: 18px;
+    font-size: 20px;
 }
 
 h1 {
     color: black;
     font-size: x-large;
-    size: 40px;
+    size: 45px;
 }
 
 h2 {
