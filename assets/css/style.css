@@ -10,13 +10,13 @@ a {
 
 p {
     color: #1b001b; 
-    font-size: 20px;
+    font-size: 22px;
 }
 
 h1 {
     color: black;
     font-size: x-large;
-    size: 45px;
+    size: 50px;
 }
 
 h2 {
@@ -27,4 +27,5 @@ h2 {
 span {
     background-color: rgb(57, 57, 255);
     color: whitesmoke;
+    font-size: 17px;
 }
