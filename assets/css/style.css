@@ -12,7 +12,7 @@ a {
 }
 
 p {
-    color: #1b001b; 
+    color: rgb(0, 41, 17); 
     font-size: 22px;
 }
 
@@ -28,7 +28,7 @@ h2 {
 }
 
 span {
-    background-color: rgb(57, 57, 255);
+    background-color: rgb(0, 41, 17);
     color: whitesmoke;
     font-size: 17px;
 }
