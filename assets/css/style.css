@@ -5,8 +5,10 @@ html {
 }
 
 a {
-    font-size: large;
+    font-size:larger;
     font-weight: bold;
+    color:black;
+    background-color: antiquewhite;
 }
 
 p {
