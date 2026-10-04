@@ -1,143 +1,276 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isekai Boardgame</title>
-    <script src="assets/js/index.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset=utf8>
+    <meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <style>
+        :root {
+            color-scheme: light;
+            box-sizing: border-box;
+            padding-top: env(safe-area-inset-top, 0px);
+            padding-bottom: env(safe-area-inset-bottom, 0px)
+        }
+
+        html {
+            scroll-padding-top: env(safe-area-inset-top, 0px)
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font: 14px -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #faf9f5;
+            color: #141413
+        }
+
+        img {
+            max-width: 100%
+        }
+
+        [hidden]:not([hidden=until-found i]) {
+            display: none !important
+        }
+    </style>
 
     <meta property="og:title" content="Game Night" />
-    <meta property="og:description" content="You're invited. The Wharf. May 29th. Bardock approves." />
+    <meta property="og:description" content="You're invited. The Wharf." />
     <meta property="og:image" content="https://sweetnspicy.github.io/assets/images/appa.png" />
     <meta property="og:url" content="https://sweetnspicy.github.io" />
 </head>
 
 <body>
-    <div class="card">
-        <div class="card-top">
-            <div class="balloons">
-                <div class="balloon b1"></div>
-                <div class="balloon b2"></div>
-                <div class="balloon b3"></div>
-                <div class="balloon b4"></div>
+    <title>Another Game Night</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Karla:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <div class="wrap">
+
+        <div class="hero">
+            <div class="bulbs">
+                <span class="bulb"></span><span class="bulb"></span><span class="bulb"></span>
+                <span class="bulb"></span><span class="bulb"></span><span class="bulb"></span>
+                <span class="bulb"></span><span class="bulb"></span><span class="bulb"></span>
             </div>
-            <div class="confetti-row">
-                <div class="cdot" style="background:#D4537E"></div>
-                <div class="cdot" style="background:#7F77DD;border-radius:2px;transform:rotate(15deg)"></div>
-                <div class="cdot" style="background:#EF9F27"></div>
-                <div class="cdot" style="background:#1D9E75;border-radius:2px;transform:rotate(-10deg)"></div>
-                <div class="cdot" style="background:#D4537E"></div>
-                <div class="cdot" style="background:#7F77DD"></div>
-                <div class="cdot" style="background:#EF9F27;border-radius:2px"></div>
+
+            <svg class="scene" viewBox="0 0 400 190" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Illustration of a corner market at night with a shopper carrying a bag of snacks toward a game table.">
+                <rect x="0" y="0" width="400" height="190" fill="#232B35" />
+                <!-- storefront -->
+                <rect x="18" y="46" width="160" height="104" rx="4" fill="#2E3846" />
+                <rect x="18" y="46" width="160" height="16" fill="#E8A23A" />
+                <rect x="18" y="46" width="160" height="16" fill="url(#stripes)" />
+                <rect x="32" y="74" width="54" height="52" rx="3" fill="#1B2129" stroke="#4FA69A" stroke-width="2" />
+                <rect x="96" y="74" width="54" height="52" rx="3" fill="#1B2129" stroke="#4FA69A" stroke-width="2" />
+                <circle cx="59" cy="100" r="9" fill="#E2543D" />
+                <rect x="104" y="92" width="38" height="16" rx="2" fill="#E8A23A" />
+                <rect x="40" y="130" width="116" height="20" rx="2" fill="#4FA69A" opacity=".25" />
+                <rect x="150" y="98" width="20" height="52" fill="#1B2129" />
+                <rect x="150" y="98" width="20" height="52" fill="none" stroke="#3A434F" stroke-width="2" />
+                <circle cx="166" cy="124" r="2.4" fill="#E8A23A" />
+
+                <!-- ground -->
+                <rect x="0" y="150" width="400" height="40" fill="#1F2733" />
+
+                <!-- shopper -->
+                <g>
+                    <circle cx="248" cy="92" r="12" fill="#E8A23A" />
+                    <rect x="236" y="104" width="24" height="40" rx="10" fill="#4FA69A" />
+                    <rect x="222" y="112" width="16" height="30" rx="7" fill="#4FA69A" />
+                    <rect x="256" y="108" width="14" height="30" rx="6" fill="#E8A23A" />
+                    <rect x="232" y="142" width="12" height="26" rx="4" fill="#232B35" />
+                    <rect x="252" y="142" width="12" height="26" rx="4" fill="#232B35" />
+                    <!-- paper bag -->
+                    <path d="M262 108 L286 104 L292 150 L258 150 Z" fill="#E2543D" />
+                    <rect x="266" y="92" width="6" height="18" fill="#E2543D" />
+                    <rect x="280" y="90" width="6" height="18" fill="#E2543D" />
+                    <rect x="263" y="118" width="26" height="4" fill="#1B2129" opacity=".3" />
+                    <!-- baguette -->
+                    <rect x="267" y="78" width="7" height="34" rx="3.5" fill="#E8A23A" transform="rotate(10 270 95)" />
+                </g>
+
+                <!-- dice floating -->
+                <g transform="translate(326,52) rotate(-8)">
+                    <rect width="30" height="30" rx="6" fill="#F4EEE2" />
+                    <circle cx="9" cy="9" r="2.4" fill="#1B2129" />
+                    <circle cx="21" cy="9" r="2.4" fill="#1B2129" />
+                    <circle cx="9" cy="21" r="2.4" fill="#1B2129" />
+                    <circle cx="21" cy="21" r="2.4" fill="#1B2129" />
+                    <circle cx="15" cy="15" r="2.4" fill="#1B2129" />
+                </g>
+                <g transform="translate(352,86) rotate(14)">
+                    <rect width="22" height="22" rx="5" fill="#E2543D" />
+                    <circle cx="7" cy="7" r="2" fill="#F4EEE2" />
+                    <circle cx="15" cy="15" r="2" fill="#F4EEE2" />
+                </g>
+
+                <!-- stars -->
+                <circle cx="40" cy="20" r="1.6" fill="#F4EEE2" opacity=".6" />
+                <circle cx="90" cy="14" r="1.2" fill="#F4EEE2" opacity=".5" />
+                <circle cx="310" cy="18" r="1.6" fill="#F4EEE2" opacity=".6" />
+                <circle cx="370" cy="30" r="1.2" fill="#F4EEE2" opacity=".5" />
+
+                <defs>
+                    <pattern id="stripes" width="20" height="16" patternUnits="userSpaceOnUse"
+                        patternTransform="skewX(-20)">
+                        <rect width="10" height="16" fill="#E2543D" />
+                    </pattern>
+                </defs>
+            </svg>
+
+            <p class="eyebrow">You're invited</p>
+            <h1>Tee's Final Shirting</h1>
+            <p class="subhead">Just another game night invitation. Tee the Pallet Breaker is leaving us forever
+                and moving back to <s>Stupid</s>Texas. So into the fray we go once more.</p>
+        </div>
+
+        <div class="ticket">
+            <div class="ticket-row">
+                <div class="ticket-main">
+                    <div class="field">
+                        <span class="k">Hosted by</span>
+                        <span class="v placeholder">Sweetn'Spicy</span>
+                    </div>
+                    <div class="field">
+                        <span class="k">Date &amp; time</span>
+                        <span class="v placeholder mono">22, October 2026 · 6:00 PM</span>
+                    </div>
+                    <div class="field">
+                        <span class="k">Where</span>
+                        <span class="v placeholder">945 Sixth St. SW, Apt. [REDACTED]</span>
+                    </div>
+                    <div class="field">
+                        <span class="k">PTO</span>
+                        <span class="v placeholder">Take it. Use that AR. Trust.</span>
+                    </div>
+                </div>
             </div>
-            <h1>I Got Hit By a Truck and Was Reincarnated Into Another World as a Scrabble Q Tile</h1>
-            <div class="description-box">
-                <p>May. It is a month. My first ever friend was born in May. The 28th. And the only kid in elementary
-                    school taller than me was also born that day. Damn Reid... hate that kid.</p>
-                <p>Anywho. It's game night again. Haven't had one in 7 years because I have been a good lil Leia to some
-                    naughty lil corporations. Truly ecstasy. Never been happier.</p>
-                <img src="assets/images/gojo-smile.png" alt="ppl having fun" width="100%">
-                <p>There will be many a game to play, board and video. And many a food item catered by Sweetn'Spicy
-                    Industries. And bevs. I've been learning how to make mocktails and lemme tell ya hwat, I am a
-                    professional already.</p>
-                <p>There's parking on the street and in my parking garage. Train accessible from Yellow and Green lines.
-                    In The Wharf so if you have a boat you could still show up. No helipads though. Pull up. It'll be
-                    fun. It's early enough that you can just mark 'no availability' on that day. Or you can just use
-                AR like a real one. F that shift. Ong. I am AR's Strongest Warrior.</p>
+            <div class="perf"></div>
+            <div class="bring">
+                <h2>There shall be</h2>
+                <ul>
+                    <li>This is early enough where you can change your availability at the Joe to not have you working
+                        that thursday evening.</li>
+                    <li>Many a snack and beverage provided (we get paid that day)</li>
+                    <li>Board and Card games but if you have one that's simple enough and you don't have other friends
+                        to play it with, lmk</li>
+                    <li>Some type of dessert maybe probably</li>
+                </ul>
             </div>
         </div>
 
-        <div class="card-body">
-            <div class="detail-row">
-                <div class="icon-dot dot-pink">
-                    <svg viewBox="0 0 14 14" fill="none">
-                        <rect x="1" y="3" width="12" height="10" rx="2" stroke="#D4537E" stroke-width="1.2" />
-                        <line x1="5" y1="1" x2="5" y2="5" stroke="#D4537E" stroke-width="1.2" stroke-linecap="round" />
-                        <line x1="9" y1="1" x2="9" y2="5" stroke="#D4537E" stroke-width="1.2" stroke-linecap="round" />
-                        <line x1="1" y1="7" x2="13" y2="7" stroke="#D4537E" stroke-width="1.2" />
-                    </svg>
-                </div>
-                <div>
-                    <div class="detail-label">Date</div>
-                    <div class="detail-value">Tuesday, May 26th</div>
-                </div>
-            </div>
+        <div class="rsvp">
+            <h2>RSVP</h2>
+            <p class="hint">Fill this out and it'll turn into a ready-to-send message — tap to copy it, or try the text
+                shortcut below. They might work...</p>
 
-            <div class="detail-row">
-                <div class="icon-dot dot-purple">
-                    <svg viewBox="0 0 14 14" fill="none">
-                        <circle cx="7" cy="7" r="5.5" stroke="#7F77DD" stroke-width="1.2" />
-                        <polyline points="7,3.5 7,7 9.5,8.5" stroke="#7F77DD" stroke-width="1.2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </div>
-                <div>
-                    <div class="detail-label">Time</div>
-                    <div class="detail-value">7:00 PM</div>
-                </div>
-            </div>
+            <form id="rsvpForm">
+                <label class="lbl" for="name">Name</label>
+                <input type="text" id="name" placeholder="e.g. Oscar De La Hoya" required>
 
-            <div class="detail-row">
-                <div class="icon-dot dot-teal">
-                    <svg viewBox="0 0 14 14" fill="none">
-                        <path
-                            d="M7 1.5C4.8 1.5 3 3.3 3 5.5C3 8.5 7 12.5 7 12.5C7 12.5 11 8.5 11 5.5C11 3.3 9.2 1.5 7 1.5Z"
-                            stroke="#1D9E75" stroke-width="1.2" />
-                        <circle cx="7" cy="5.5" r="1.5" stroke="#1D9E75" stroke-width="1.2" />
-                    </svg>
+                <label class="lbl">Can you make it?</label>
+                <div class="pills" role="radiogroup" aria-label="Attendance">
+                    <label class="pill">
+                        <input type="radio" name="status" value="Yes, I love you" checked>
+                        <span>Yes</span>
+                    </label>
+                    <label class="pill">
+                        <input type="radio" name="status" value="Maybe... We'll see how the world turns that day">
+                        <span>Maybe</span>
+                    </label>
+                    <label class="pill">
+                        <input type="radio" name="status"
+                            value="I think you're such a shitty human and I won't be hanging out with you anymore">
+                        <span>No. I fucking despise you.</span>
+                    </label>
                 </div>
-                <div>
-                    <div class="detail-label">Address</div>
-                    <div class="detail-value">945 Sixth St. SW</div>
-                </div>
-            </div>
 
-            <div class="detail-row last">
-                <div class="icon-dot dot-amber">
-                    <svg viewBox="0 0 14 14" fill="none">
-                        <path d="M2 10L5 4L7 8L9 5.5L12 10Z" stroke="#BA7517" stroke-width="1.2"
-                            stroke-linejoin="round" />
-                    </svg>
+                <div class="row2">
+                    <div>
+                        <label class="lbl" for="guests">Bringing anyone?</label>
+                        <input type="number" id="guests" min="0" max="8" value="0" inputmode="numeric">
+                    </div>
+                    <div>
+                        <label class="lbl" for="game">A snack recommendation?</label>
+                        <input type="text" id="game" placeholder="optional">
+                    </div>
                 </div>
-                <div>
-                    <div class="detail-label">Directions</div>
-                    <div class="detail-value">Street/garage parking free. Yellow &amp; Green line accessible</div>
-                </div>
-            </div>
 
-            <div class="games-wrap">
-                <div class="games-label">On the table</div>
-                <div class="game-tags">
-                    <span class="game-tag">Mario Kart</span>
-                    <span class="game-tag">Bananagrams</span>
-                    <span class="game-tag">Exploding Kittens</span>
-                    <span class="game-tag">Pro mocktails</span>
-                    <span class="game-tag">High Quality Catering</span>
-                    <span class="game-tag">Random other games mmhmm</span>
+                <label class="lbl" for="note">Anything else</label>
+                <textarea id="note" placeholder="Allergies, arriving late, etc. — optional"></textarea>
+
+                <button type="submit" class="primary">Prepare my RSVP</button>
+            </form>
+
+            <div class="result" id="result" hidden>
+                <p class="lead">Your RSVP message</p>
+                <pre id="resultText"></pre>
+                <div class="actions">
+                    <button type="button" class="ghost" id="copyBtn">Copy message</button>
+                    <a class="btn" id="smsBtn" href="#">Text it (who knows if this works)</a>
                 </div>
+                <p class="note">If the text link doesn't work, copy the message and just text it to me. Cuz I will
+                    defintiely remember the rsvp list. frfr.</p>
             </div>
         </div>
 
-        <div class="card-footer">
-            <button class="rsvp-btn" onclick="document.getElementById('rsvp-modal').classList.add('open')">RSVP — let's
-                play!</button>
+        <div class="contact">
+            <span class="k">Reach the host directly</span>
+            <div class="contact-line">
+                <span class="v" id="hostPhone">314-435-5185</span>
+                <button class="copybtn" data-copy-target="hostPhone">Copy</button>
+            </div>
+        </div>
+
+        <p class="note">I would like feedback on this webpage because this took so long to make. I am out here
+            suffering.</p>
+        <div class="photos">
+            <p class="eyebrow">These like all the pics I got of her...</p>
+            <div class="photo-grid">
+                <figure class="photo-card">
+                    <div class="photo-frame">
+                        <img id="tee1" class="tee-img" tabindex="0" alt="Game night photo — tap to see the full shot"
+                            src="./assets/images/tee1.jpg" viewBox='0 0 400 300' %3E%3Crect width='400' height='300'
+                            fill='%232C3542' /%3E%3Crect x='130' y='110' width='140' height='100' rx='14'
+                            fill='%233A434F' /%3E%3Crect x='170' y='90' width='60' height='28' rx='6' fill='%233A434F'
+                            /%3E%3Ccircle cx='200' cy='160' r='34' fill='%231B2129' /%3E%3Ccircle cx='200' cy='160'
+                            r='22' fill='%23E8A23A' /%3E%3C/svg%3E">
+                    </div>
+                    <figcaption class="caption placeholder" id="tee1Caption">Caught her mid selfie</figcaption>
+                </figure>
+                <figure class="photo-card">
+                    <div class="photo-frame">
+                        <img id="tee2" class="tee-img" tabindex="0" alt="Game night photo — tap to see the full shot"
+                            src="./assets/images/tee2.jpg" viewBox='0 0 400 300' %3E%3Crect width='400' height='300'
+                            fill='%232C3542' /%3E%3Crect x='130' y='110' width='140' height='100' rx='14'
+                            fill='%233A434F' /%3E%3Crect x='170' y='90' width='60' height='28' rx='6' fill='%233A434F'
+                            /%3E%3Ccircle cx='200' cy='160' r='34' fill='%231B2129' /%3E%3Ccircle cx='200' cy='160'
+                            r='22' fill='%23E8A23A' /%3E%3C/svg%3E">
+                    </div>
+                    <figcaption class="caption placeholder" id="tee2Caption">She has never once smiled at me like that
+                    </figcaption>
+                </figure>
+                <figure class="photo-card">
+                    <div class="photo-frame">
+                        <img id="tee3" class="tee-img" tabindex="0" alt="Game night photo — tap to see the full shot"
+                            src="./assets/images/tee3.jpg" viewBox='0 0 400 300' %3E%3Crect width='400' height='300'
+                            fill='%232C3542' /%3E%3Crect x='130' y='110' width='140' height='100' rx='14'
+                            fill='%233A434F' /%3E%3Crect x='170' y='90' width='60' height='28' rx='6' fill='%233A434F'
+                            /%3E%3Ccircle cx='200' cy='160' r='34' fill='%231B2129' /%3E%3Ccircle cx='200' cy='160'
+                            r='22' fill='%23E8A23A' /%3E%3C/svg%3E">
+                    </div>
+                    <figcaption class="caption placeholder" id="tee3Caption">I ONLY get this one shifty ass sideeye from
+                        her hooligan ass</figcaption>
+                </figure>
+            </div>
         </div>
     </div>
-    <!-- RSVP Modal -->
-    <div class="modal-overlay" id="rsvp-modal" onclick="if(event.target===this)this.classList.remove('open')">
-        <div class="modal-box">
-            <!-- 👇 Replace this src with any image URL you want -->
-            <p class="modal-quote">"You're ignorant, and that's my fault?" -Bardock</p>
-            <img src="assets/images/isekaiImage.png" alt="RSVP confirmation"
-                onclick="this.classList.toggle('expanded')" />
-            <button class="modal-close"
-                onclick="document.getElementById('rsvp-modal').classList.remove('open')">Close</button>
-            <p>I don't have the facilities to make an actual rsvp button that connects to something I can see because lazy so yes.</p>
-        </div>
-    </div>
+
+    <script src="assets/js/index.js"></script>
+
 </body>
 
 </html>
